@@ -9,18 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-
-
-    <title>website</title>
-    
+      rel="stylesheet">
+      <title>website</title>
   </head>
   <body>
+
+    <div class="preload" [data-preaload]>
+      <div class="content">
+        <div class="circle"></div>
+      <p class="text">loading...</p></div>
+      
+    </div>
+
+    
     <div id="page-1"> 
       <div class="navbar-section">
         <div class="logo-section">
@@ -29,21 +30,22 @@
         <div class="links-section">
           <ul>
             <li><a href="website.html">Home</a></li>
-            <li><a href="#">Movie</a></li>
+            <li><a href="#page-2">Movie</a></li>
             <li><a href="#">Tv show</a></li>
             <li><a href="#">Web series</a></li>
             <li><a href="#">Pericing</a></li>
           </ul>
         </div>
+       
         <div class="language-section">
           <i class="fa-solid fa-globe"></i>
           <select name="lang" id="lang">
-            <option value="" selected>En</option>
-            <option value="">Ar</option>
-            <option value="">Tu</option>
-            <option value="">Au</option>
+              <option value="en" selected>En</option>
+              <option value="ar">Ar</option>
+              <option value="tu">Tu</option>
+              <option value="au">Au</option>
           </select>
-        </div>
+      </div>
         <div class="sing-up">
           <a href="sing-up.html" target="_blank"><button>sign in</button></a>
         </div>
@@ -59,9 +61,9 @@
         <button><i class="fa-solid fa-caret-right"></i>Watch</button>
       </div>
     </div>
-   <div class="move-up-button">
-      <button id="arrow"><i class="fa-solid fa-caret-up"></i>
-    </div>
+    <button id="scrollUpBtn" >
+    <img src="352469_arrow_up_icon.png" alt="">
+    </button>
 </div>
     <div id="page-2">
       <div class="head-page-2">
@@ -70,31 +72,97 @@
       </div>
       <div class="catagoris">
         <ul>
-          <li id="ho">Movies</li>
-          <li id="ho">Tv Shows</li>
-          <li id="ho">Anmie</li>
+            <li class="hover-item">Movies</li>
+            <li class="hover-item">Tv Shows</li>
+            <li class="hover-item">Anime</li>
         </ul>
-      </div>
-      <div class="swiperight"><i class="fa-solid fa-angle-right"></i></div>
-      <div class="swiperight2"><i class="fa-solid fa-angle-left"></i></div>
-      <div class="movies-poster">
-        <img src="upcoming-1.png" alt="Movie" />
-        <img src="upcoming-2.png" alt="Movie" />
-        <img src="upcoming-3.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <img src="upcoming-4.png" alt="Movie" />
-        <p id="pra">the northman</p>
-        <p id="p">Doctor Strange in the Multiverse of Madness</p>
-        <p id="p">Memory</p>
-        <p id="p">The Unbearable Weight of Massive Talent</p>
-      </div>
     </div>
+      <div class="swiperight" onclick="moveSlide('right')"><img src="211620_b_right_arrow_icon.png" alt=""></div>
+      <div class="swiperight2" onclick="moveSlide('left')"><img src="211617_b_left_arrow_icon.png" alt=""></div>
+      <ul class="top-slider">
+          <li class="slider">
+            <img src="movie-1.png" alt="">
+            <div class="content">
+               <h4>Movie name</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+          <button> Watch Now</button></div>
+         
+          </li>
+          <li class="slider"><img src="movie-2.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-3.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-4.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-5.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-6.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-7.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+          <li class="slider"><img src="movie-8.png" alt="">
+            <div class="content">
+              <h4>Movie name</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ea a earum ullam nobis consequuntur maiores cupiditate minima pariatur dolore? Eum tenetur quae maiores numquam dignissimos, corrupti debitis architecto est.</p>
+
+         <button> Watch Now</button></div></li>
+         
+      </ul>
+    </div>
+
+    <div class="extra" id="extra">
+      <div class="content"> 
+          <h1>Top movies</h1>
+          <ul>
+              <li><a href="#extra" onclick="filterSelection('all')">All</a></li>
+              <li><a href="#extra" onclick="filterSelection('movie')">Movies</a></li>
+              <li><a href="#extra" onclick="filterSelection('series')">Series</a></li>
+          </ul>
+      </div>
+      
+      <div class="selection">
+        <div class="swiperdown" onclick="moveSlide('down')"><img src="chevron-down-solid.svg" alt=""></div>
+        <div class="swiperup" onclick="moveSlide('up')"><img src="chevron-up-solid.svg" alt=""></div>
+          <img id="slider" src="movie-1.png" alt="" class="movie">
+          <img id="slider" src="movie-1.png" alt="" class="movie">
+          <img id="slider" src="movie-1.png" alt="" class="series">
+          <img id="slider" src="movie-3.png" alt="" class="series">
+          <img id="slider" src="movie-3.png" alt="" class="series">
+          <img id="slider" src="movie-4.png" alt="" class="series">
+          <img id="slider" src="movie-5.png" alt="" class="movie">
+          <img id="slider" src="movie-8.png" alt="" class="series">
+          <img id="slider" src="movie-7.png" alt="" class="series">
+          <img id="slider" src="movie-7.png" alt="" class="series">
+          <img id="slider" src="movie-7.png" alt="" class="series">
+          <img  id="slider"src="movie-7.png" alt="" class="series">
+          <img id="slider" src="movie-7.png" alt="" class="series">
+      </div>
+  </div>
 
     <div id="page-3">
       <img src="service-banner.jpg" alt="banner" />
@@ -187,11 +255,8 @@
       </div>
     </div>
     <script src="web.js"></script>
-    <script
-      src="https://kit.fontawesome.com/6473324066.js"
-      crossorigin="anonymous"
-    > </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script
-      
+   
+    
+
   </body>
 </html>
