@@ -222,10 +222,7 @@ select option {
   border-radius: 25px;
 }
 
-.movies-poster {
-  display: flex;
-  gap: 30px;
-}
+
 .swiperight{
   opacity: 0.8;
   position: absolute;
@@ -253,8 +250,12 @@ select option {
  position: absolute;
   
 }
+.top-slider{
+  display: flex;
+  gap: 30px;
+}
 
-.movies-poster img {
+.top-slider .slider img{
   width: 290px;
   height: 400px;
   position: relative;
@@ -263,12 +264,58 @@ select option {
   border-radius: 8px;
   cursor: pointer;
 }
-
-.movies-poster img:hover {
-  opacity: 0.5;
+.slider{
+  position: relative;
 }
-#ho:hover {
-  border: #e2d702 2px solid;
+
+.slider .content{
+  position: absolute;
+  left: 50px;
+  top: 350px;
+  
+}
+
+
+
+.slider .content h4{
+  color: #ecece4;
+  position: absolute;
+  bottom: 305px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.slider .content p{
+  color: #ecece4;
+  position: relative;
+  top: 250px;
+ right: 22px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 10px;
+  width: 310px;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.slider .content button{
+  position: relative;
+  top: 250px;
+  right: 22px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 10px;
+  width: 310px;
+  letter-spacing: 2px;
+  line-height: 20px;
+  background-color: #e2d702;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 
@@ -286,6 +333,73 @@ select option {
 #p:hover {
   color: #e2d702;
   transition: 0.2s;
+}
+
+
+.extra{
+  background: url(upcoming-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.extra .content{
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ justify-content: center;
+ align-items: center;
+}
+
+.extra .content h1{
+  color: #ecece4;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.extra .content ul{
+  display: flex;
+  gap: 35px;
+  font-size: 25px;
+}
+
+.extra .content li{
+  border: 1px #161616 solid;
+  width: 120px;
+  color: snow;
+  text-align: center;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.extra .content  li:hover{
+  background-color: #e2d702; 
+  color: rgb(0, 0, 0);
+}
+
+.extra .content a{
+  color: #eee;
+}
+.extra .content a:hover{
+  color: black;
+}
+
+.selection{
+  display: flex;
+  flex-flow: row wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
 }
 
 
